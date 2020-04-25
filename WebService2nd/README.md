@@ -18,8 +18,6 @@ or:
 Stop:
 - ./stop.sh
 
-View: localhost:80/PATH
-                 
-PATH: 
-- /cars/<car_id>
-- /cars
+View: 
+- localhost:80/cars/<car_id>
+- localhost:80/cars
