@@ -36,8 +36,10 @@ class Car(Resource):
         else:               
             response = DannoService().post_movie(args['movie details'])
             if response == "Movie service is down":
+                keyCounter -= 1
                 return "Movie service is down, can't post new movies", 503
             elif response == 403:
+                keyCounter -= 1
                 return 'Every movie has its unique EIDR', 403
 
             Cars[newCar['car_id']] = newCar
