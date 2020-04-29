@@ -10,9 +10,7 @@ Build and start:
 - ./run.sh
 
 or:
-- cd WebService2nd/Danno 
-- docker-compose up --build -d
-- cd .. 
+- cd WebService2nd
 - docker-compose up --build -d
 
 Stop:
